@@ -93,7 +93,7 @@ public class GeoPipeFlowHits extends CatchingIteratorWrapper<Node, GeoPipeFlow> 
 		// associated 'real' node. If this is the case is it OK to just return
 		// null or should we return the geomNode
 		
-		Object idString = record.getProperty("id");
+		Object idString = record.getNodeId();
 		Node result = null;
 		
 		if(idString != null){
